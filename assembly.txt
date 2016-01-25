@@ -1,0 +1,17 @@
+Assembly    Binary  Hex     Description
+ANDO        0000    0       Acc = Acc & Opr
+AORO        0001    1       Acc = Acc v Opr
+XORO        0010    2       Acc = Acc ⊕ Opr
+NORO        0011    3       Acc = Acc ⊽ Opr
+ADDO        0100    4       Acc = Acc + Opr
+SUBO        0101    5       Acc = Acc - Opr
+AEQO        0110    6       Acc = Opr
+LESS        0111    7       Acc < mem[Opr]
+AEQM        1000    8       Acc = mem[Opr]
+JPTO        1001    9       PC = Opr
+JPTM        1010    a       PC = mem[Opr]
+MEQA        1011    b       mem[Opr] = Acc
+ADDM        1100    c       Acc = Acc + mem[Opr]
+SUBM        1101    d       Acc = Acc - mem[Opr]
+JPIO        1110    e       if (Acc == 0) PC = Opr
+JPIM        1111    f       if (Acc == 0) PC = mem[Opr]
